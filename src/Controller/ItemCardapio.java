@@ -5,6 +5,8 @@ public abstract class ItemCardapio {
     private String nome;
     private double precoBase;
 
+    public ItemCardapio(){
+    }
 
     public ItemCardapio(String nome, double precoBase){
         this.nome = nome;
@@ -18,7 +20,7 @@ public abstract class ItemCardapio {
     }
 
     public String getNome() {
-        return nome;
+        return this.nome;
     }
 
     public void setNome(String nome){
@@ -31,6 +33,10 @@ public abstract class ItemCardapio {
 
     public void setPrecoBase(double precoBase){
         this.precoBase = precoBase;
+    }
+
+    public String toString(){
+        return "Sua bebida: " + nome + " " + "O preço dela: " + precoBase;
     }
 
 }
