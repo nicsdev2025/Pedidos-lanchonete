@@ -35,8 +35,5 @@ public abstract class ItemCardapio {
         this.precoBase = precoBase;
     }
 
-    public String toString(){
-        return "Sua bebida: " + nome + " " + "O preço dela: " + precoBase;
-    }
 
 }
